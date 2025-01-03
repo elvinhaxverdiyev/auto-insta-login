@@ -1,5 +1,5 @@
 from instabot import InstagramBot
-from profil_data import username, password
+from constants import username, password
 
 app = InstagramBot(username, password)
 app.open_link()

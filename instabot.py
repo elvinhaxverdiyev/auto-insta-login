@@ -3,7 +3,7 @@ import chromedriver_autoinstaller
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 import time
-from profil_data import username, password, ignore_name
+from constants import username, password, ignore_name
 from base_url import url
 
 chromedriver_autoinstaller.install()
