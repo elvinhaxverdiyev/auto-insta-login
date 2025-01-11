@@ -1,13 +1,32 @@
-Instagram Bot
+# Instagram Bot - README
 
-This Python script automates actions on Instagram, such as logging into an account, searching for a user, and blocking (ignoring) a user automatically. The bot uses Selenium WebDriver to interact with Instagram’s web interface.
+## Overview
+This application is a bot designed to perform automated tasks on Instagram. The bot logs into the user account, searches for a specific profile, and automatically blocks the user.
 
-Prerequisites System Requirements Python 3.8+ Google Chrome (latest version)
+## Key Features
+1. **Login**: Logs into an Instagram account using the specified username and password.
+2. **Profile Search**: Searches for a specific user profile by entering a username in the search field.
+3. **Blocking**: Blocks the identified user and confirms the action.
 
-Required Libraries:
+## Installation and Execution
+1. Install the required Python libraries:
+   ```bash
+   pip install selenium chromedriver-autoinstaller
+   ```
+2. Create the `constants.py` and `base_url.py` files and add the following information:
+   - `constants.py`: Define variables for username (`username`), password (`password`), and the username to search and block (`ignore_name`).
+   - `base_url.py`: Define the URL for the Instagram login page (`url`).
+3. Run the application with the following command:
+   ```bash
+   python instagram_bot.py
+   ```
 
-selenium
-chromedriver-autoinstaller
-Features Login to Instagram: Automates the login process using the username and password from profil_data.py. Search for a User: The bot searches for the username you wish to block. Block User: Automates blocking the searched user by interacting with Instagram's interface.
+## Usage
+1. Update the `username`, `password`, and `ignore_name` variables in the code with your credentials and target username.
+2. The bot will open the Instagram login page, log in, search for the user in the search field, and block them.
 
-Troubleshooting Driver Issues: Ensure your Chrome browser is updated. chromedriver_autoinstaller automatically installs the correct driver. Selector Errors: If Instagram’s interface changes, update the CSS or XPath selectors used to identify elements.
+## Notes
+- Keep your login credentials secure and do not share them with others.
+- Ensure that the ChromeDriver used by Selenium is compatible with your browser version.
+- Make sure your internet connection is stable for the bot to operate smoothly.
+
